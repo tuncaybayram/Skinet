@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\API",
+    "\\API\\bin",
+    "\\API\\bin\\Debug",
+    "\\API\\bin\\Debug\\net6.0",
+    "\\API\\Controllers",
+    "\\API\\Data",
+    "\\API\\Entities"
+  ],
+  "SelectedNode": "\\API\\bin\\Debug\\net6.0\\API.exe",
+  "PreviewInSolutionExplorer": false
+}
