@@ -1,6 +1,7 @@
 
 using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Data.SeedData;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -44,6 +45,7 @@ try
 {
     var context =services.GetRequiredService<StroreContext>();
     await context.Database.MigrateAsync();
+    await StoreContextSeed.SeedAsync(context,loggerFactory);
 }
 catch(Exception ex)
 {

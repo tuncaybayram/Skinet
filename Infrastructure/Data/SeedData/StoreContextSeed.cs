@@ -47,7 +47,10 @@ namespace Infrastructure.Data.SeedData
                 }
                 
             }
-            catch{
+            catch(Exception ex)
+            {
+                var logger=loggerFactory.CreateLogger<StoreContextSeed>();
+                logger.LogError(ex.Message);
 
             }
         }
